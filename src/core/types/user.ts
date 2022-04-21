@@ -1,7 +1,7 @@
 export type User = {
-  email: String;
-  token: String;
-  username: String;
-  bio: String;
-  image: String;
-};
+  email: string
+  token: string
+  username: string
+  bio: string
+  image: string
+}
