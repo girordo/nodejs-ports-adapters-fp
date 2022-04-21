@@ -15,10 +15,11 @@
     "test:integration:watch": " yarn test:integration --watch",
     "lint": "eslint . --ext js,ts",
     "lint:fix": "eslint --fix . --ext js,ts",
+    "format": "prettier  --loglevel warn --write \"./**/*.{js,jsx,ts,tsx,css,md,json}\" ",
     "type-check": "tsc --project tsconfig.json --pretty --noEmit",
     "prepare": "husky install",
     "build": "tsc",
-    "ci": "yarn lint && yarn type-check && yarn test"
+    "ci": "yarn lint && yarn format && yarn type-check && yarn test"
   },
   "dependencies": {
     "dotenv": "8.2.0",
